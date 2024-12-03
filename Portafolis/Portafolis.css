@@ -1,0 +1,325 @@
+/* PORTADA */
+/* estils per a la portada */
+.portada {
+    background-image: url(fotos/fons\ rosa.jpg);
+    background-size: cover; /* li poso aixó perque ocupi tota la pantalla i sigui la portada */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* que no es repeteixi la foto del fons */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    height: 100vh; /*portada ocupa tota l'altura de la finestra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* deixar espai entre el contingut superior i inferior */
+}
+/* format del text que va per sobre i sota del títol*/
+.com{
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.punt{
+    font-size: 20px;
+}
+/*format del títol*/
+h1{
+    font-family:BlinkMacSystemFont;
+    font-size: 100px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 5px;
+    color: rgb(248, 165, 179);
+    background-color: white;
+}
+/* configuració de cada part del menú */
+#part{
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 20px;
+}
+/* arreglem aquesta div per poder tenir el menu enganxat abaix i el titol i lo altre més adalt*/
+.inici{
+    text-align: center;
+    margin-top: 100px; /* li posem margin-top perquè no estigui enganchat adalt de tot*/
+}
+.menu{
+    display: flex;
+    width: 100%; /* el menú ocupa tota l'amplada */
+    text-align: center; /* centra el contingut del menú */
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PSICOLOGIA DELS COLORS */
+/*arreglar taula de la psicologia de colors*/
+/*posar colors de fons a cada casella de la taula dels colors*/
+.transparent{background-color: rgba(192, 23, 23, 0);
+    padding: 20px 10px;}
+.vermell{background-color: rgb(192, 23, 23);
+    padding: 20px 10px;}
+.blau{background-color: rgb(42, 230, 204);
+    padding: 20px 10px;}
+.groc{background-color: rgb(229, 233, 30);
+    padding: 20px 10px;}
+.verd{background-color: rgb(29, 231, 46);
+    padding: 20px 10px;}
+.taronja{background-color: rgb(245, 127, 31);
+    padding: 20px 10px;}
+.rosa{background-color: rgb(241, 92, 130);
+    padding: 20px 10px;}
+/* configuracio de la divisió on va la taula */
+.col{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(248, 165, 179);
+    border-radius: 10px;
+    margin: 10px;
+}
+/* configuració de la taula */
+#colors{
+    width: 100%; /* que ocupi tota l'altura */
+    border-collapse: separate; /* caselles separades */
+    border-spacing: 10px;
+}
+/* títol de la primera columna més gran perquè destaqui */
+.tt{
+    font-size: 25px;
+
+}
+
+/*format general del BODY*/
+body{
+/*imatge de fons*/
+    background-image: url(fotos/fons.jpg);
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+/*AGENDES"*/
+/*format de l'apartat, "agendes"*/
+.agendes{
+    text-align: justify;
+    padding: 5px;
+    border-radius: 10px;
+}
+/*format del subapartat, "agendes"*/
+#agendes, .cal, .video{ /*també posem aquestes condicions a "cal", el subapartat de calendaris i al video*/
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(248, 165, 179);
+    border-radius: 10px;
+    margin: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* APPS */
+/*fixar apps*/
+.apps{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    top: 20px;
+    
+    align-items: stretch;
+    box-sizing: border-box;
+}
+/*format del subapartat, "logos"*/
+.logos{
+    display: flex;
+    flex-direction: column; /*posar-ho com a columna*/
+    background-color: rgb(248, 165, 179);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+#llibreta{
+    padding: 5px;
+    background-image: url(fotos/hoja\ lineas\ rosa.jpg);
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    height: 315px;
+}
+#tit{
+    position: absolute;
+    font-size: 25px;
+    left: 5px;
+}
+#idees{
+    position: absolute;
+    top: 65px;
+    font-size: 25px;
+    left: 10%;
+}
+#notes-classe{
+    position: absolute;
+    top: 65px;
+    left: 40%;
+    font-size: 25px;
+}
+#resum{
+    position: absolute;
+    margin-top: 200px;
+    font-size: 25px;
+    left: 5px;
+}
+
+/* PEU */
+/*arreglem el peu*/
+.peu {
+    position: relative;
+    height: 120px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; /* espais iguals entre elements */
+    background-image: url(fotos/fons\ rosa.jpg);
+    
+    padding: 10px; 
+    color: rgb(248, 165, 179); 
+    font-family: Arial, sans-serif; 
+}
+
+.peu .autor,
+.peu .log,
+.peu .any {
+    display: flex; 
+    justify-content: center; /* centra el text o imatge dins de la caixa */
+    align-items: center; /* centra verticalment */
+    background-image: url(fotos/rodona.png);
+    background-size: contain; /* ajustar el fons a cada text o foto */
+    background-repeat: no-repeat;
+    border-radius: 50%; /* donar una forma circular als fons perquè al ser un cercle i no tenir fons si no queda el text a l'espai transparent*/
+    width: 80px;
+    height: 80px; 
+    text-align: center;
+}
+
+.peu .log img {
+    border-radius: 50%; /* fer que la imatge del logo també sigui rodona */
+    width: 50px; /* ajusta la mida de la imatge del logo */
+    height: 50px;
+}
+
+
+
+/*format de LLETRES*/
+/*format del h2*/
+h2{
+    background-color: rgb(248, 165, 179);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+/*format de tot el que sigui p*/
+p{
+    font-family: cursive;
+    text-align: justify;
+    font-size: 18px;
+}
+/*format de tot el que sigui p1*/
+p1{
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+/*ORGANITZACIÓ GRID*/
+.agendes {grid-area: agendes;}
+.calendaris {grid-area: calendaris;}
+.fletxa {grid-area: fletxa;}
+.apps {grid-area: apps;}
+.color{grid-area: color;}
+.peu {grid-area: peu;}
+.tecniques{grid-area: tecniques; margin-left: 250px;}
+.apunts{grid-area: apunts;}
+.grid {
+display: grid;
+grid-template-areas: 
+"apps color agendes"
+"apps calendaris calendaris"
+"apps calendaris calendaris"
+"tecniques tecniques apunts"
+"peu peu peu";
+gap: 1px;
+}
+
+/*organització de CALENDARIS amb grid*/
+#anual {grid-area: anual;}
+#mensual {grid-area: mensual;}
+#setmanal {grid-area: setmanal;}
+#diari {grid-area: diari;}
+.cal{
+display: grid;
+grid-template-areas: 
+"anual mensual setmanal diari";
+gap: 20px;
+border-radius: 10px;
+margin: 10px;
+}
+/* Espais i estils generals dels subapartats */
+#anual, #mensual, #setmanal, #diari {
+    padding: 5px;
+    text-align: center;
+}
+/* taules dins dels subapartats */
+#anual table, #mensual table, #setmanal table, #diari table {
+    width: 100%;
+    border-spacing: 5px;
+}
+/* llistes dins dels subapartats */
+#anual ul, #mensual ul, #setmanal ul, #diari ul {
+    padding-left: 20px; /* acabar de centrar */
+    margin: 0;
+    text-align: justify;
+}
+#anual ul li, #mensual ul li, #setmanal ul li, #diari ul li {
+    list-style-position: inside; /* punts enganxats al text */
+}
+/* imatges dins dels subapartats */
+#anual img, #mensual img, #setmanal img, #diari img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.grid > .element {
+    display: flex; /* cada element de la grid té Flexbox */
+    justify-content: center;
+}
+@media (max-width:400px) {
+    .grid {
+        grid-template-areas: 
+        "apps color"
+        "apps agendes"
+        "apps calendaris"
+        "tecniques tecniques"
+        "apps apunts"
+        "peu peu";
+        }  
+
+}
